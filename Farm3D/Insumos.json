@@ -1,0 +1,20 @@
+
+[
+   {
+    "tipoDeInsumo" : "filamento",
+    "tipo:" : "PLA", 
+    "marca" : "Bambulab",
+    "corDeCatalogo" : "Marine Blue",
+    "modelo" : "Mate",
+    "precoAquisicao" : "130.90",
+    "dataDeCompra" : "1/2/2026",
+    "PesoBobinaVaziaGramas" : "246",
+    "QtdDisponivelParaUso" : "600",
+    "qtdLiquidaNovaGramas" : "1000"
+    },
+
+    { 
+    
+    }
+]
+
