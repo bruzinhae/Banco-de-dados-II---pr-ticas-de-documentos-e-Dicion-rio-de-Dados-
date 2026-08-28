@@ -1,0 +1,45 @@
+
+[{
+    "tipoDeInsumo" : "filamento",
+    "cor" : "Marine Blue",
+    "marca:" : "PLA",
+    "PesoOriginalGramas" : "1000",
+    "QtdDisponivelParaUsoGramas" : "600",
+    "precoAquisicao" : "130.90",
+    "fornecedor" : "Bambulab",
+    "dataDeCompra" : "1/2/2026"
+    },
+
+    {
+    "tipoDeInsumo" : "filamento",
+    "cor" : "Vermelho",
+    "marca:" : "PLA",
+    "PesoOriginalGramas" : "1000",
+    "QtdDisponivelParaUsoGramas" : "600",
+    "precoAquisicao" : "130.90",
+    "fornecedor" : "Bambulab",
+    "dataDeCompra" : "1/2/2026"
+    },
+
+    {
+    "tipoDeInsumo" : "filamento",
+    "cor" : "Preto",
+    "marca:" : "PLA",
+    "PesoOriginalGramas" : "1000",
+    "QtdDisponivelParaUsoGramas" : "600",
+    "precoAquisicao" : "130.90",
+    "fornecedor" : "Bambulab",
+    "dataDeCompra" : "1/2/2026"
+    },
+
+    {
+    "tipoDeInsumo" : "filamento",
+    "cor" : "Branco",
+    "marca:" : "PLA",
+    "PesoOriginalGramas" : "1000",
+    "QtdDisponivelParaUsoGramas" : "600",
+    "precoAquisicao" : "130.90",
+    "fornecedor" : "Bambulab",
+    "dataDeCompra" : "1/2/2026"
+    },
+]

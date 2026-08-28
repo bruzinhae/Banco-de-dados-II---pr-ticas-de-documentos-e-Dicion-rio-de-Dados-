@@ -1,20 +1,58 @@
 
 [
    {
-    "tipoDeInsumo" : "filamento",
-    "tipo:" : "PLA", 
-    "marca" : "Bambulab",
-    "corDeCatalogo" : "Marine Blue",
-    "modelo" : "Mate",
-    "precoAquisicao" : "130.90",
-    "dataDeCompra" : "1/2/2026",
-    "PesoBobinaVaziaGramas" : "246",
-    "QtdDisponivelParaUso" : "600",
-    "qtdLiquidaNovaGramas" : "1000"
+        "nome": "PLA",
+        "tipo": "filamento"
     },
 
     { 
-    
+        "nome:" : "ABS",
+        "tipo" : "filamento"
+    },
+
+    { 
+        "nome" : "PETG",
+        "tipo" : "filamento"
+    },
+
+    {
+        "nome" : "Argola",
+        "tipo" : "custos adicionais"
+    },
+
+    {
+        "nome" : "Correntinha",
+        "tipo" : "custos adicionais"
+    },
+
+    {
+        "nome" : "Saquinho de embalagem",
+        "tipo" : "custos adicionais"
+    },
+
+    {
+        "nome" : "Filipeta de papelão",
+        "tipo" : "custos adicionais"
+    },
+
+    {
+        "nome" : "Licença comercial",
+        "tipo" : "custos adicionais"
+    },
+
+    {
+        "nome" : "Cola",
+        "tipo" : "custos adicionais"
+    },
+
+    {
+        "nome" : "Tinta",
+        "tipo" : "custos adicionais"
+    },
+
+    {
+        "nome" : "Lixa",
+        "tipo" : "custos adicionais"
     }
 ]
 
