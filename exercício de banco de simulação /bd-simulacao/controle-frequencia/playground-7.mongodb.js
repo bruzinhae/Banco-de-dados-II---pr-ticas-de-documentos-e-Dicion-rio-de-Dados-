@@ -1,0 +1,1419 @@
+// MongoDB Playground
+// Use Ctrl+Space inside a snippet or a string literal to trigger completions.
+
+// The current database to use.
+use('controle_frequencia_v1');
+
+// Create a new document in the collection.
+db.getCollection('chamadas').insertMany(
+
+    [
+        {
+            "_id": "CH-12490-P-0101-2026-08-01",
+            "data": "2026-08-01",
+            "disciplina": {
+            "codigo": "12490-P",
+            "nome": "Estudos de Bancos de Dados 2 - Prática",
+            "curso": "Engenharia de Software",
+            "periodo": 4,
+            "anoCalendario": 2026,
+            "semestreCalendario": 2
+            },
+            "turma": {
+            "codigo": "0101",
+            "qtdeAtualDeMatriculados": 29
+            },
+            "docente": {
+            "RP": "4567890",
+            "nome": "Steve Jobs"
+            },
+            "aula": {
+            "dataHoraInicio": "2026-08-01T08:00:00",
+            "dataHoraFim": "2026-08-01T09:40:00",
+            "qtdeHorasAula": 2,
+            "conteudo": "Apresentação da disciplina e revisão de modelagem orientada a documentos."
+            },
+            "resumo": {
+            "totalAlunos": 5,
+            "presentes": 4,
+            "ausentes": 1
+            },
+            "alunos": [
+            {
+                "RA": "1234",
+                "nome": "Ayrton Senna",
+                "presente": true
+            },
+            {
+                "RA": "1235",
+                "nome": "Ana Clara Souza",
+                "presente": true
+            },
+            {
+                "RA": "1236",
+                "nome": "Bruno Henrique Lima",
+                "presente": false,
+                "justificativa": "Sem justificativa informada"
+            },
+            {
+                "RA": "1237",
+                "nome": "Camila Ferreira Rocha",
+                "presente": true
+            },
+            {
+                "RA": "1238",
+                "nome": "Diego Martins Alves",
+                "presente": true
+            }
+            ]
+        },
+        {
+            "_id": "CH-12490-P-0101-2026-08-07",
+            "data": "2026-08-07",
+            "disciplina": {
+            "codigo": "12490-P",
+            "nome": "Estudos de Bancos de Dados 2 - Prática",
+            "curso": "Engenharia de Software",
+            "periodo": 4,
+            "anoCalendario": 2026,
+            "semestreCalendario": 2
+            },
+            "turma": {
+            "codigo": "0101",
+            "qtdeAtualDeMatriculados": 29
+            },
+            "docente": {
+            "RP": "4567890",
+            "nome": "Steve Jobs"
+            },
+            "aula": {
+            "dataHoraInicio": "2026-08-07T08:00:00",
+            "dataHoraFim": "2026-08-07T09:40:00",
+            "qtdeHorasAula": 2,
+            "conteudo": "Discussão sobre agregação, referências e desnormalização controlada."
+            },
+            "resumo": {
+            "totalAlunos": 5,
+            "presentes": 5,
+            "ausentes": 0
+            },
+            "alunos": [
+            {
+                "RA": "1234",
+                "nome": "Ayrton Senna",
+                "presente": true
+            },
+            {
+                "RA": "1235",
+                "nome": "Ana Clara Souza",
+                "presente": true
+            },
+            {
+                "RA": "1236",
+                "nome": "Bruno Henrique Lima",
+                "presente": true
+            },
+            {
+                "RA": "1237",
+                "nome": "Camila Ferreira Rocha",
+                "presente": true
+            },
+            {
+                "RA": "1238",
+                "nome": "Diego Martins Alves",
+                "presente": true
+            }
+            ]
+        },
+        {
+            "_id": "CH-12490-P-0102-2026-08-02",
+            "data": "2026-08-02",
+            "disciplina": {
+            "codigo": "12490-P",
+            "nome": "Estudos de Bancos de Dados 2 - Prática",
+            "curso": "Engenharia de Software",
+            "periodo": 4,
+            "anoCalendario": 2026,
+            "semestreCalendario": 2
+            },
+            "turma": {
+            "codigo": "0102",
+            "qtdeAtualDeMatriculados": 40
+            },
+            "docente": {
+            "RP": "890392",
+            "nome": "Ada Lovelace"
+            },
+            "aula": {
+            "dataHoraInicio": "2026-08-02T10:00:00",
+            "dataHoraFim": "2026-08-02T11:40:00",
+            "qtdeHorasAula": 2,
+            "conteudo": "Introdução a bancos orientados a documentos e desenho de coleções."
+            },
+            "resumo": {
+            "totalAlunos": 5,
+            "presentes": 4,
+            "ausentes": 1
+            },
+            "alunos": [
+            {
+                "RA": "2234",
+                "nome": "Eduarda Pereira Nunes",
+                "presente": true
+            },
+            {
+                "RA": "2235",
+                "nome": "Felipe Augusto Ribeiro",
+                "presente": true
+            },
+            {
+                "RA": "2236",
+                "nome": "Giovana Costa Melo",
+                "presente": true
+            },
+            {
+                "RA": "2237",
+                "nome": "Henrique Batista Gomes",
+                "presente": false,
+                "justificativa": "Atestado pendente"
+            },
+            {
+                "RA": "2238",
+                "nome": "Isabela Moura Cardoso",
+                "presente": true
+            }
+            ]
+        },
+        {
+            "_id": "CH-12490-P-0102-2026-08-08",
+            "data": "2026-08-08",
+            "disciplina": {
+            "codigo": "12490-P",
+            "nome": "Estudos de Bancos de Dados 2 - Prática",
+            "curso": "Engenharia de Software",
+            "periodo": 4,
+            "anoCalendario": 2026,
+            "semestreCalendario": 2
+            },
+            "turma": {
+            "codigo": "0102",
+            "qtdeAtualDeMatriculados": 40
+            },
+            "docente": {
+            "RP": "890392",
+            "nome": "Ada Lovelace"
+            },
+            "aula": {
+            "dataHoraInicio": "2026-08-08T10:00:00",
+            "dataHoraFim": "2026-08-08T11:40:00",
+            "qtdeHorasAula": 2,
+            "conteudo": "Modelagem de chamada por aula com snapshot de disciplina, turma e docente."
+            },
+            "resumo": {
+            "totalAlunos": 5,
+            "presentes": 5,
+            "ausentes": 0
+            },
+            "alunos": [
+            {
+                "RA": "2234",
+                "nome": "Eduarda Pereira Nunes",
+                "presente": true
+            },
+            {
+                "RA": "2235",
+                "nome": "Felipe Augusto Ribeiro",
+                "presente": true
+            },
+            {
+                "RA": "2236",
+                "nome": "Giovana Costa Melo",
+                "presente": true
+            },
+            {
+                "RA": "2237",
+                "nome": "Henrique Batista Gomes",
+                "presente": true
+            },
+            {
+                "RA": "2238",
+                "nome": "Isabela Moura Cardoso",
+                "presente": true
+            }
+            ]
+        },
+        {
+            "_id": "CH-12491-P-0101-2026-08-01",
+            "data": "2026-08-01",
+            "disciplina": {
+            "codigo": "12491-P",
+            "nome": "Defesa Contra as Artes das Trevas",
+            "curso": "Engenharia de Software",
+            "periodo": 4,
+            "anoCalendario": 2026,
+            "semestreCalendario": 2
+            },
+            "turma": {
+            "codigo": "0101",
+            "qtdeAtualDeMatriculados": 30
+            },
+            "docente": {
+            "RP": "112233",
+            "nome": "Tony Stark"
+            },
+            "aula": {
+            "dataHoraInicio": "2026-08-01T08:00:00",
+            "dataHoraFim": "2026-08-01T09:40:00",
+            "qtdeHorasAula": 2,
+            "conteudo": "Feitiços defensivos básicos e o encantamento Patronus."
+            },
+            "resumo": {
+            "totalAlunos": 5,
+            "presentes": 4,
+            "ausentes": 1
+            },
+            "alunos": [
+            {
+                "RA": "1239",
+                "nome": "Luke Skywalker",
+                "presente": true
+            },
+            {
+                "RA": "1240",
+                "nome": "Harry Potter",
+                "presente": true
+            },
+            {
+                "RA": "1241",
+                "nome": "Peter Parker",
+                "presente": false,
+                "justificativa": "Detenção com Filch"
+            },
+            {
+                "RA": "1242",
+                "nome": "Diana Prince",
+                "presente": true
+            },
+            {
+                "RA": "1243",
+                "nome": "Clark Kent",
+                "presente": true
+            }
+            ]
+        },
+        {
+            "_id": "CH-12492-P-0101-2026-08-02",
+            "data": "2026-08-02",
+            "disciplina": {
+            "codigo": "12492-P",
+            "nome": "Poções",
+            "curso": "Engenharia de Software",
+            "periodo": 4,
+            "anoCalendario": 2026,
+            "semestreCalendario": 2
+            },
+            "turma": {
+            "codigo": "0101",
+            "qtdeAtualDeMatriculados": 30
+            },
+            "docente": {
+            "RP": "223344",
+            "nome": "Indiana Jones"
+            },
+            "aula": {
+            "dataHoraInicio": "2026-08-02T08:00:00",
+            "dataHoraFim": "2026-08-02T09:40:00",
+            "qtdeHorasAula": 2,
+            "conteudo": "Preparo da Poção Polissuco e cuidados no manuseio de ingredientes."
+            },
+            "resumo": {
+            "totalAlunos": 5,
+            "presentes": 5,
+            "ausentes": 0
+            },
+            "alunos": [
+            {
+                "RA": "1239",
+                "nome": "Luke Skywalker",
+                "presente": true
+            },
+            {
+                "RA": "1240",
+                "nome": "Harry Potter",
+                "presente": true
+            },
+            {
+                "RA": "1241",
+                "nome": "Peter Parker",
+                "presente": true
+            },
+            {
+                "RA": "1242",
+                "nome": "Diana Prince",
+                "presente": true
+            },
+            {
+                "RA": "1243",
+                "nome": "Clark Kent",
+                "presente": true
+            }
+            ]
+        },
+        {
+            "_id": "CH-12493-P-0101-2026-08-03",
+            "data": "2026-08-03",
+            "disciplina": {
+            "codigo": "12493-P",
+            "nome": "Herbologia",
+            "curso": "Engenharia de Software",
+            "periodo": 4,
+            "anoCalendario": 2026,
+            "semestreCalendario": 2
+            },
+            "turma": {
+            "codigo": "0101",
+            "qtdeAtualDeMatriculados": 30
+            },
+            "docente": {
+            "RP": "334455",
+            "nome": "Ellen Ripley"
+            },
+            "aula": {
+            "dataHoraInicio": "2026-08-03T08:00:00",
+            "dataHoraFim": "2026-08-03T09:40:00",
+            "qtdeHorasAula": 2,
+            "conteudo": "Replantio de mandrágoras na Estufa Três."
+            },
+            "resumo": {
+            "totalAlunos": 5,
+            "presentes": 3,
+            "ausentes": 2
+            },
+            "alunos": [
+            {
+                "RA": "1239",
+                "nome": "Luke Skywalker",
+                "presente": true
+            },
+            {
+                "RA": "1240",
+                "nome": "Harry Potter",
+                "presente": false,
+                "justificativa": "Na enfermaria após acidente com mandrágora"
+            },
+            {
+                "RA": "1241",
+                "nome": "Peter Parker",
+                "presente": true
+            },
+            {
+                "RA": "1242",
+                "nome": "Diana Prince",
+                "presente": false,
+                "justificativa": "Sem justificativa informada"
+            },
+            {
+                "RA": "1243",
+                "nome": "Clark Kent",
+                "presente": true
+            }
+            ]
+        },
+        {
+            "_id": "CH-12494-P-0101-2026-08-04",
+            "data": "2026-08-04",
+            "disciplina": {
+            "codigo": "12494-P",
+            "nome": "Transfiguração",
+            "curso": "Engenharia de Software",
+            "periodo": 4,
+            "anoCalendario": 2026,
+            "semestreCalendario": 2
+            },
+            "turma": {
+            "codigo": "0101",
+            "qtdeAtualDeMatriculados": 30
+            },
+            "docente": {
+            "RP": "445566",
+            "nome": "Jack Sparrow"
+            },
+            "aula": {
+            "dataHoraInicio": "2026-08-04T08:00:00",
+            "dataHoraFim": "2026-08-04T09:40:00",
+            "qtdeHorasAula": 2,
+            "conteudo": "Transformação de objetos inanimados em animais pequenos."
+            },
+            "resumo": {
+            "totalAlunos": 5,
+            "presentes": 5,
+            "ausentes": 0
+            },
+            "alunos": [
+            {
+                "RA": "1239",
+                "nome": "Luke Skywalker",
+                "presente": true
+            },
+            {
+                "RA": "1240",
+                "nome": "Harry Potter",
+                "presente": true
+            },
+            {
+                "RA": "1241",
+                "nome": "Peter Parker",
+                "presente": true
+            },
+            {
+                "RA": "1242",
+                "nome": "Diana Prince",
+                "presente": true
+            },
+            {
+                "RA": "1243",
+                "nome": "Clark Kent",
+                "presente": true
+            }
+            ]
+        },
+        {
+            "_id": "CH-12495-P-0101-2026-08-05",
+            "data": "2026-08-05",
+            "disciplina": {
+            "codigo": "12495-P",
+            "nome": "Feitiços",
+            "curso": "Engenharia de Software",
+            "periodo": 4,
+            "anoCalendario": 2026,
+            "semestreCalendario": 2
+            },
+            "turma": {
+            "codigo": "0101",
+            "qtdeAtualDeMatriculados": 30
+            },
+            "docente": {
+            "RP": "556677",
+            "nome": "Hermione Granger"
+            },
+            "aula": {
+            "dataHoraInicio": "2026-08-05T08:00:00",
+            "dataHoraFim": "2026-08-05T09:40:00",
+            "qtdeHorasAula": 2,
+            "conteudo": "Prática do feitiço Wingardium Leviosa."
+            },
+            "resumo": {
+            "totalAlunos": 5,
+            "presentes": 4,
+            "ausentes": 1
+            },
+            "alunos": [
+            {
+                "RA": "1239",
+                "nome": "Luke Skywalker",
+                "presente": true
+            },
+            {
+                "RA": "1240",
+                "nome": "Harry Potter",
+                "presente": true
+            },
+            {
+                "RA": "1241",
+                "nome": "Peter Parker",
+                "presente": true
+            },
+            {
+                "RA": "1242",
+                "nome": "Diana Prince",
+                "presente": true
+            },
+            {
+                "RA": "1243",
+                "nome": "Clark Kent",
+                "presente": false,
+                "justificativa": "Trocou de turno com o time de quadribol"
+            }
+            ]
+        },
+        {
+            "_id": "CH-12496-P-0101-2026-08-06",
+            "data": "2026-08-06",
+            "disciplina": {
+            "codigo": "12496-P",
+            "nome": "Trato das Criaturas Mágicas",
+            "curso": "Engenharia de Software",
+            "periodo": 4,
+            "anoCalendario": 2026,
+            "semestreCalendario": 2
+            },
+            "turma": {
+            "codigo": "0101",
+            "qtdeAtualDeMatriculados": 30
+            },
+            "docente": {
+            "RP": "667788",
+            "nome": "Forrest Gump"
+            },
+            "aula": {
+            "dataHoraInicio": "2026-08-06T08:00:00",
+            "dataHoraFim": "2026-08-06T09:40:00",
+            "qtdeHorasAula": 2,
+            "conteudo": "Primeiro contato com hipogrifos e etiqueta de reverência."
+            },
+            "resumo": {
+            "totalAlunos": 5,
+            "presentes": 5,
+            "ausentes": 0
+            },
+            "alunos": [
+            {
+                "RA": "1239",
+                "nome": "Luke Skywalker",
+                "presente": true
+            },
+            {
+                "RA": "1240",
+                "nome": "Harry Potter",
+                "presente": true
+            },
+            {
+                "RA": "1241",
+                "nome": "Peter Parker",
+                "presente": true
+            },
+            {
+                "RA": "1242",
+                "nome": "Diana Prince",
+                "presente": true
+            },
+            {
+                "RA": "1243",
+                "nome": "Clark Kent",
+                "presente": true
+            }
+            ]
+        },
+        {
+            "_id": "CH-12497-P-0101-2026-08-01",
+            "data": "2026-08-01",
+            "disciplina": {
+            "codigo": "12497-P",
+            "nome": "Astronomia",
+            "curso": "Engenharia de Software",
+            "periodo": 4,
+            "anoCalendario": 2026,
+            "semestreCalendario": 2
+            },
+            "turma": {
+            "codigo": "0101",
+            "qtdeAtualDeMatriculados": 30
+            },
+            "docente": {
+            "RP": "778899",
+            "nome": "Neo Anderson"
+            },
+            "aula": {
+            "dataHoraInicio": "2026-08-01T10:00:00",
+            "dataHoraFim": "2026-08-01T11:40:00",
+            "qtdeHorasAula": 2,
+            "conteudo": "Observação noturna e mapeamento de constelações mágicas."
+            },
+            "resumo": {
+            "totalAlunos": 5,
+            "presentes": 4,
+            "ausentes": 1
+            },
+            "alunos": [
+            {
+                "RA": "1239",
+                "nome": "Luke Skywalker",
+                "presente": true
+            },
+            {
+                "RA": "1240",
+                "nome": "Harry Potter",
+                "presente": true
+            },
+            {
+                "RA": "1241",
+                "nome": "Peter Parker",
+                "presente": true
+            },
+            {
+                "RA": "1242",
+                "nome": "Diana Prince",
+                "presente": false,
+                "justificativa": "Sem justificativa informada"
+            },
+            {
+                "RA": "1243",
+                "nome": "Clark Kent",
+                "presente": true
+            }
+            ]
+        },
+        {
+            "_id": "CH-12498-P-0101-2026-08-02",
+            "data": "2026-08-02",
+            "disciplina": {
+            "codigo": "12498-P",
+            "nome": "Aritmancia",
+            "curso": "Engenharia de Software",
+            "periodo": 4,
+            "anoCalendario": 2026,
+            "semestreCalendario": 2
+            },
+            "turma": {
+            "codigo": "0101",
+            "qtdeAtualDeMatriculados": 30
+            },
+            "docente": {
+            "RP": "889900",
+            "nome": "Rocky Balboa"
+            },
+            "aula": {
+            "dataHoraInicio": "2026-08-02T10:00:00",
+            "dataHoraFim": "2026-08-02T11:40:00",
+            "qtdeHorasAula": 2,
+            "conteudo": "Introdução a tabelas numerológicas e previsões mágicas."
+            },
+            "resumo": {
+            "totalAlunos": 5,
+            "presentes": 5,
+            "ausentes": 0
+            },
+            "alunos": [
+            {
+                "RA": "1239",
+                "nome": "Luke Skywalker",
+                "presente": true
+            },
+            {
+                "RA": "1240",
+                "nome": "Harry Potter",
+                "presente": true
+            },
+            {
+                "RA": "1241",
+                "nome": "Peter Parker",
+                "presente": true
+            },
+            {
+                "RA": "1242",
+                "nome": "Diana Prince",
+                "presente": true
+            },
+            {
+                "RA": "1243",
+                "nome": "Clark Kent",
+                "presente": true
+            }
+            ]
+        },
+        {
+            "_id": "CH-12499-P-0101-2026-08-03",
+            "data": "2026-08-03",
+            "disciplina": {
+            "codigo": "12499-P",
+            "nome": "Estudo das Runas Antigas",
+            "curso": "Engenharia de Software",
+            "periodo": 4,
+            "anoCalendario": 2026,
+            "semestreCalendario": 2
+            },
+            "turma": {
+            "codigo": "0101",
+            "qtdeAtualDeMatriculados": 30
+            },
+            "docente": {
+            "RP": "990011",
+            "nome": "Vito Corleone"
+            },
+            "aula": {
+            "dataHoraInicio": "2026-08-03T10:00:00",
+            "dataHoraFim": "2026-08-03T11:40:00",
+            "qtdeHorasAula": 2,
+            "conteudo": "Tradução de inscrições rúnicas antigas."
+            },
+            "resumo": {
+            "totalAlunos": 5,
+            "presentes": 4,
+            "ausentes": 1
+            },
+            "alunos": [
+            {
+                "RA": "1239",
+                "nome": "Luke Skywalker",
+                "presente": false,
+                "justificativa": "Treino da Ordem da Fênix"
+            },
+            {
+                "RA": "1240",
+                "nome": "Harry Potter",
+                "presente": true
+            },
+            {
+                "RA": "1241",
+                "nome": "Peter Parker",
+                "presente": true
+            },
+            {
+                "RA": "1242",
+                "nome": "Diana Prince",
+                "presente": true
+            },
+            {
+                "RA": "1243",
+                "nome": "Clark Kent",
+                "presente": true
+            }
+            ]
+        },
+        {
+            "_id": "CH-12500-P-0101-2026-08-04",
+            "data": "2026-08-04",
+            "disciplina": {
+            "codigo": "12500-P",
+            "nome": "Adivinhação",
+            "curso": "Engenharia de Software",
+            "periodo": 4,
+            "anoCalendario": 2026,
+            "semestreCalendario": 2
+            },
+            "turma": {
+            "codigo": "0101",
+            "qtdeAtualDeMatriculados": 30
+            },
+            "docente": {
+            "RP": "101202",
+            "nome": "Sarah Connor"
+            },
+            "aula": {
+            "dataHoraInicio": "2026-08-04T10:00:00",
+            "dataHoraFim": "2026-08-04T11:40:00",
+            "qtdeHorasAula": 2,
+            "conteudo": "Leitura de folhas de chá e interpretação de presságios."
+            },
+            "resumo": {
+            "totalAlunos": 5,
+            "presentes": 5,
+            "ausentes": 0
+            },
+            "alunos": [
+            {
+                "RA": "1239",
+                "nome": "Luke Skywalker",
+                "presente": true
+            },
+            {
+                "RA": "1240",
+                "nome": "Harry Potter",
+                "presente": true
+            },
+            {
+                "RA": "1241",
+                "nome": "Peter Parker",
+                "presente": true
+            },
+            {
+                "RA": "1242",
+                "nome": "Diana Prince",
+                "presente": true
+            },
+            {
+                "RA": "1243",
+                "nome": "Clark Kent",
+                "presente": true
+            }
+            ]
+        },
+        {
+            "_id": "CH-12501-P-0101-2026-08-05",
+            "data": "2026-08-05",
+            "disciplina": {
+            "codigo": "12501-P",
+            "nome": "Voo",
+            "curso": "Engenharia de Software",
+            "periodo": 4,
+            "anoCalendario": 2026,
+            "semestreCalendario": 2
+            },
+            "turma": {
+            "codigo": "0101",
+            "qtdeAtualDeMatriculados": 30
+            },
+            "docente": {
+            "RP": "202303",
+            "nome": "James Bond"
+            },
+            "aula": {
+            "dataHoraInicio": "2026-08-05T10:00:00",
+            "dataHoraFim": "2026-08-05T11:40:00",
+            "qtdeHorasAula": 2,
+            "conteudo": "Manobras básicas de vassoura no campo de treinamento."
+            },
+            "resumo": {
+            "totalAlunos": 5,
+            "presentes": 4,
+            "ausentes": 1
+            },
+            "alunos": [
+            {
+                "RA": "1239",
+                "nome": "Luke Skywalker",
+                "presente": true
+            },
+            {
+                "RA": "1240",
+                "nome": "Harry Potter",
+                "presente": true
+            },
+            {
+                "RA": "1241",
+                "nome": "Peter Parker",
+                "presente": true
+            },
+            {
+                "RA": "1242",
+                "nome": "Diana Prince",
+                "presente": true
+            },
+            {
+                "RA": "1243",
+                "nome": "Clark Kent",
+                "presente": false,
+                "justificativa": "Sem justificativa informada"
+            }
+            ]
+        },
+        {
+            "_id": "CH-12502-P-0101-2026-08-06",
+            "data": "2026-08-06",
+            "disciplina": {
+            "codigo": "12502-P",
+            "nome": "História da Magia",
+            "curso": "Engenharia de Software",
+            "periodo": 4,
+            "anoCalendario": 2026,
+            "semestreCalendario": 2
+            },
+            "turma": {
+            "codigo": "0101",
+            "qtdeAtualDeMatriculados": 30
+            },
+            "docente": {
+            "RP": "303404",
+            "nome": "Marty McFly"
+            },
+            "aula": {
+            "dataHoraInicio": "2026-08-06T10:00:00",
+            "dataHoraFim": "2026-08-06T11:40:00",
+            "qtdeHorasAula": 2,
+            "conteudo": "As rebeliões de duendes e sua influência na sociedade mágica."
+            },
+            "resumo": {
+            "totalAlunos": 5,
+            "presentes": 5,
+            "ausentes": 0
+            },
+            "alunos": [
+            {
+                "RA": "1239",
+                "nome": "Luke Skywalker",
+                "presente": true
+            },
+            {
+                "RA": "1240",
+                "nome": "Harry Potter",
+                "presente": true
+            },
+            {
+                "RA": "1241",
+                "nome": "Peter Parker",
+                "presente": true
+            },
+            {
+                "RA": "1242",
+                "nome": "Diana Prince",
+                "presente": true
+            },
+            {
+                "RA": "1243",
+                "nome": "Clark Kent",
+                "presente": true
+            }
+            ]
+        },
+        {
+            "_id": "CH-12503-P-0101-2026-08-01",
+            "data": "2026-08-01",
+            "disciplina": {
+            "codigo": "12503-P",
+            "nome": "Estudo dos Trouxas",
+            "curso": "Engenharia de Software",
+            "periodo": 4,
+            "anoCalendario": 2026,
+            "semestreCalendario": 2
+            },
+            "turma": {
+            "codigo": "0101",
+            "qtdeAtualDeMatriculados": 30
+            },
+            "docente": {
+            "RP": "404505",
+            "nome": "Han Solo"
+            },
+            "aula": {
+            "dataHoraInicio": "2026-08-01T13:00:00",
+            "dataHoraFim": "2026-08-01T14:40:00",
+            "qtdeHorasAula": 2,
+            "conteudo": "Como funcionam eletrodomésticos e o motivo de sua atração por eletricidade."
+            },
+            "resumo": {
+            "totalAlunos": 5,
+            "presentes": 3,
+            "ausentes": 2
+            },
+            "alunos": [
+            {
+                "RA": "1239",
+                "nome": "Luke Skywalker",
+                "presente": true
+            },
+            {
+                "RA": "1240",
+                "nome": "Harry Potter",
+                "presente": true
+            },
+            {
+                "RA": "1241",
+                "nome": "Peter Parker",
+                "presente": false,
+                "justificativa": "Sem justificativa informada"
+            },
+            {
+                "RA": "1242",
+                "nome": "Diana Prince",
+                "presente": false,
+                "justificativa": "Reunião com a embaixada"
+            },
+            {
+                "RA": "1243",
+                "nome": "Clark Kent",
+                "presente": true
+            }
+            ]
+        },
+        {
+            "_id": "CH-12504-P-0101-2026-08-02",
+            "data": "2026-08-02",
+            "disciplina": {
+            "codigo": "12504-P",
+            "nome": "Duelo",
+            "curso": "Engenharia de Software",
+            "periodo": 4,
+            "anoCalendario": 2026,
+            "semestreCalendario": 2
+            },
+            "turma": {
+            "codigo": "0101",
+            "qtdeAtualDeMatriculados": 30
+            },
+            "docente": {
+            "RP": "505606",
+            "nome": "Bruce Wayne"
+            },
+            "aula": {
+            "dataHoraInicio": "2026-08-02T13:00:00",
+            "dataHoraFim": "2026-08-02T14:40:00",
+            "qtdeHorasAula": 2,
+            "conteudo": "Formação do clube de duelos e prática do feitiço Expelliarmus."
+            },
+            "resumo": {
+            "totalAlunos": 5,
+            "presentes": 5,
+            "ausentes": 0
+            },
+            "alunos": [
+            {
+                "RA": "1239",
+                "nome": "Luke Skywalker",
+                "presente": true
+            },
+            {
+                "RA": "1240",
+                "nome": "Harry Potter",
+                "presente": true
+            },
+            {
+                "RA": "1241",
+                "nome": "Peter Parker",
+                "presente": true
+            },
+            {
+                "RA": "1242",
+                "nome": "Diana Prince",
+                "presente": true
+            },
+            {
+                "RA": "1243",
+                "nome": "Clark Kent",
+                "presente": true
+            }
+            ]
+        },
+        {
+            "_id": "CH-12505-P-0101-2026-08-03",
+            "data": "2026-08-03",
+            "disciplina": {
+            "codigo": "12505-P",
+            "nome": "Alquimia",
+            "curso": "Engenharia de Software",
+            "periodo": 4,
+            "anoCalendario": 2026,
+            "semestreCalendario": 2
+            },
+            "turma": {
+            "codigo": "0101",
+            "qtdeAtualDeMatriculados": 30
+            },
+            "docente": {
+            "RP": "606707",
+            "nome": "Clarice Starling"
+            },
+            "aula": {
+            "dataHoraInicio": "2026-08-03T13:00:00",
+            "dataHoraFim": "2026-08-03T14:40:00",
+            "qtdeHorasAula": 2,
+            "conteudo": "Transmutação de metais e a Pedra Filosofal."
+            },
+            "resumo": {
+            "totalAlunos": 5,
+            "presentes": 4,
+            "ausentes": 1
+            },
+            "alunos": [
+            {
+                "RA": "1239",
+                "nome": "Luke Skywalker",
+                "presente": true
+            },
+            {
+                "RA": "1240",
+                "nome": "Harry Potter",
+                "presente": true
+            },
+            {
+                "RA": "1241",
+                "nome": "Peter Parker",
+                "presente": true
+            },
+            {
+                "RA": "1242",
+                "nome": "Diana Prince",
+                "presente": true
+            },
+            {
+                "RA": "1243",
+                "nome": "Clark Kent",
+                "presente": false,
+                "justificativa": "Sem justificativa informada"
+            }
+            ]
+        },
+        {
+            "_id": "CH-12506-P-0101-2026-08-04",
+            "data": "2026-08-04",
+            "disciplina": {
+            "codigo": "12506-P",
+            "nome": "Aparatação",
+            "curso": "Engenharia de Software",
+            "periodo": 4,
+            "anoCalendario": 2026,
+            "semestreCalendario": 2
+            },
+            "turma": {
+            "codigo": "0101",
+            "qtdeAtualDeMatriculados": 30
+            },
+            "docente": {
+            "RP": "707808",
+            "nome": "Maximus Decimus"
+            },
+            "aula": {
+            "dataHoraInicio": "2026-08-04T13:00:00",
+            "dataHoraFim": "2026-08-04T14:40:00",
+            "qtdeHorasAula": 2,
+            "conteudo": "Teoria dos três Ds da aparatação: destino, determinação, deliberação."
+            },
+            "resumo": {
+            "totalAlunos": 5,
+            "presentes": 5,
+            "ausentes": 0
+            },
+            "alunos": [
+            {
+                "RA": "1239",
+                "nome": "Luke Skywalker",
+                "presente": true
+            },
+            {
+                "RA": "1240",
+                "nome": "Harry Potter",
+                "presente": true
+            },
+            {
+                "RA": "1241",
+                "nome": "Peter Parker",
+                "presente": true
+            },
+            {
+                "RA": "1242",
+                "nome": "Diana Prince",
+                "presente": true
+            },
+            {
+                "RA": "1243",
+                "nome": "Clark Kent",
+                "presente": true
+            }
+            ]
+        },
+        {
+            "_id": "CH-12507-P-0101-2026-08-05",
+            "data": "2026-08-05",
+            "disciplina": {
+            "codigo": "12507-P",
+            "nome": "Feitiços Avançados",
+            "curso": "Engenharia de Software",
+            "periodo": 4,
+            "anoCalendario": 2026,
+            "semestreCalendario": 2
+            },
+            "turma": {
+            "codigo": "0101",
+            "qtdeAtualDeMatriculados": 30
+            },
+            "docente": {
+            "RP": "808909",
+            "nome": "Katniss Everdeen"
+            },
+            "aula": {
+            "dataHoraInicio": "2026-08-05T13:00:00",
+            "dataHoraFim": "2026-08-05T14:40:00",
+            "qtdeHorasAula": 2,
+            "conteudo": "Prática do feitiço Patronus corpóreo."
+            },
+            "resumo": {
+            "totalAlunos": 5,
+            "presentes": 4,
+            "ausentes": 1
+            },
+            "alunos": [
+            {
+                "RA": "1239",
+                "nome": "Luke Skywalker",
+                "presente": true
+            },
+            {
+                "RA": "1240",
+                "nome": "Harry Potter",
+                "presente": true
+            },
+            {
+                "RA": "1241",
+                "nome": "Peter Parker",
+                "presente": false,
+                "justificativa": "Missão com Nick Fury"
+            },
+            {
+                "RA": "1242",
+                "nome": "Diana Prince",
+                "presente": true
+            },
+            {
+                "RA": "1243",
+                "nome": "Clark Kent",
+                "presente": true
+            }
+            ]
+        },
+        {
+            "_id": "CH-12508-P-0101-2026-08-06",
+            "data": "2026-08-06",
+            "disciplina": {
+            "codigo": "12508-P",
+            "nome": "Poções Avançadas",
+            "curso": "Engenharia de Software",
+            "periodo": 4,
+            "anoCalendario": 2026,
+            "semestreCalendario": 2
+            },
+            "turma": {
+            "codigo": "0101",
+            "qtdeAtualDeMatriculados": 30
+            },
+            "docente": {
+            "RP": "909010",
+            "nome": "John Wick"
+            },
+            "aula": {
+            "dataHoraInicio": "2026-08-06T13:00:00",
+            "dataHoraFim": "2026-08-06T14:40:00",
+            "qtdeHorasAula": 2,
+            "conteudo": "Preparo da Felix Felicis e riscos de uso indevido."
+            },
+            "resumo": {
+            "totalAlunos": 5,
+            "presentes": 5,
+            "ausentes": 0
+            },
+            "alunos": [
+            {
+                "RA": "1239",
+                "nome": "Luke Skywalker",
+                "presente": true
+            },
+            {
+                "RA": "1240",
+                "nome": "Harry Potter",
+                "presente": true
+            },
+            {
+                "RA": "1241",
+                "nome": "Peter Parker",
+                "presente": true
+            },
+            {
+                "RA": "1242",
+                "nome": "Diana Prince",
+                "presente": true
+            },
+            {
+                "RA": "1243",
+                "nome": "Clark Kent",
+                "presente": true
+            }
+            ]
+        },
+        {
+            "_id": "CH-12509-P-0101-2026-08-01",
+            "data": "2026-08-01",
+            "disciplina": {
+            "codigo": "12509-P",
+            "nome": "Transfiguração Avançada",
+            "curso": "Engenharia de Software",
+            "periodo": 4,
+            "anoCalendario": 2026,
+            "semestreCalendario": 2
+            },
+            "turma": {
+            "codigo": "0101",
+            "qtdeAtualDeMatriculados": 30
+            },
+            "docente": {
+            "RP": "010111",
+            "nome": "Frodo Baggins"
+            },
+            "aula": {
+            "dataHoraInicio": "2026-08-01T15:00:00",
+            "dataHoraFim": "2026-08-01T16:40:00",
+            "qtdeHorasAula": 2,
+            "conteudo": "Transfiguração humana e registro de animagos."
+            },
+            "resumo": {
+            "totalAlunos": 5,
+            "presentes": 4,
+            "ausentes": 1
+            },
+            "alunos": [
+            {
+                "RA": "1239",
+                "nome": "Luke Skywalker",
+                "presente": true
+            },
+            {
+                "RA": "1240",
+                "nome": "Harry Potter",
+                "presente": true
+            },
+            {
+                "RA": "1241",
+                "nome": "Peter Parker",
+                "presente": true
+            },
+            {
+                "RA": "1242",
+                "nome": "Diana Prince",
+                "presente": false,
+                "justificativa": "Sem justificativa informada"
+            },
+            {
+                "RA": "1243",
+                "nome": "Clark Kent",
+                "presente": true
+            }
+            ]
+        },
+        {
+            "_id": "CH-12510-P-0101-2026-08-02",
+            "data": "2026-08-02",
+            "disciplina": {
+            "codigo": "12510-P",
+            "nome": "Magizoologia",
+            "curso": "Engenharia de Software",
+            "periodo": 4,
+            "anoCalendario": 2026,
+            "semestreCalendario": 2
+            },
+            "turma": {
+            "codigo": "0101",
+            "qtdeAtualDeMatriculados": 30
+            },
+            "docente": {
+            "RP": "111212",
+            "nome": "Tyler Durden"
+            },
+            "aula": {
+            "dataHoraInicio": "2026-08-02T15:00:00",
+            "dataHoraFim": "2026-08-02T16:40:00",
+            "qtdeHorasAula": 2,
+            "conteudo": "Classificação de criaturas mágicas segundo o Ministério da Magia."
+            },
+            "resumo": {
+            "totalAlunos": 5,
+            "presentes": 5,
+            "ausentes": 0
+            },
+            "alunos": [
+            {
+                "RA": "1239",
+                "nome": "Luke Skywalker",
+                "presente": true
+            },
+            {
+                "RA": "1240",
+                "nome": "Harry Potter",
+                "presente": true
+            },
+            {
+                "RA": "1241",
+                "nome": "Peter Parker",
+                "presente": true
+            },
+            {
+                "RA": "1242",
+                "nome": "Diana Prince",
+                "presente": true
+            },
+            {
+                "RA": "1243",
+                "nome": "Clark Kent",
+                "presente": true
+            }
+            ]
+        }
+    ]
+
+);

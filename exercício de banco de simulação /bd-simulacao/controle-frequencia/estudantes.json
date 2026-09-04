@@ -1,0 +1,466 @@
+[
+  {
+    "RA": "1234",
+    "nome": "Ayrton Senna",
+    "curso": "Engenharia de Software",
+    "periodo": 4,
+    "matriculas": [
+      {
+        "disciplinaCodigo": "12490-P",
+        "disciplinaNome": "Estudos de Bancos de Dados 2 - Prática",
+        "turmaCodigo": "0101",
+        "anoCalendario": 2026,
+        "semestreCalendario": 2,
+        "situacao": "matriculado"
+      }
+    ]
+  },
+  {
+    "RA": "1235",
+    "nome": "Ana Clara Souza",
+    "curso": "Engenharia de Software",
+    "periodo": 4,
+    "matriculas": [
+      {
+        "disciplinaCodigo": "12490-P",
+        "disciplinaNome": "Estudos de Bancos de Dados 2 - Prática",
+        "turmaCodigo": "0101",
+        "anoCalendario": 2026,
+        "semestreCalendario": 2,
+        "situacao": "matriculado"
+      }
+    ]
+  },
+  {
+    "RA": "1236",
+    "nome": "Bruno Henrique Lima",
+    "curso": "Engenharia de Software",
+    "periodo": 4,
+    "matriculas": [
+      {
+        "disciplinaCodigo": "12490-P",
+        "disciplinaNome": "Estudos de Bancos de Dados 2 - Prática",
+        "turmaCodigo": "0101",
+        "anoCalendario": 2026,
+        "semestreCalendario": 2,
+        "situacao": "matriculado"
+      }
+    ]
+  },
+  {
+    "RA": "1237",
+    "nome": "Camila Ferreira Rocha",
+    "curso": "Engenharia de Software",
+    "periodo": 4,
+    "matriculas": [
+      {
+        "disciplinaCodigo": "12490-P",
+        "disciplinaNome": "Estudos de Bancos de Dados 2 - Prática",
+        "turmaCodigo": "0101",
+        "anoCalendario": 2026,
+        "semestreCalendario": 2,
+        "situacao": "matriculado"
+      }
+    ]
+  },
+  {
+    "RA": "1238",
+    "nome": "Diego Martins Alves",
+    "curso": "Engenharia de Software",
+    "periodo": 4,
+    "matriculas": [
+      {
+        "disciplinaCodigo": "12490-P",
+        "disciplinaNome": "Estudos de Bancos de Dados 2 - Prática",
+        "turmaCodigo": "0101",
+        "anoCalendario": 2026,
+        "semestreCalendario": 2,
+        "situacao": "matriculado"
+      }
+    ]
+  },
+  {
+    "RA": "2234",
+    "nome": "Eduarda Pereira Nunes",
+    "curso": "Engenharia de Software",
+    "periodo": 4,
+    "matriculas": [
+      {
+        "disciplinaCodigo": "12490-P",
+        "disciplinaNome": "Estudos de Bancos de Dados 2 - Prática",
+        "turmaCodigo": "0102",
+        "anoCalendario": 2026,
+        "semestreCalendario": 2,
+        "situacao": "matriculado"
+      }
+    ]
+  },
+  {
+    "RA": "2235",
+    "nome": "Felipe Augusto Ribeiro",
+    "curso": "Engenharia de Software",
+    "periodo": 4,
+    "matriculas": [
+      {
+        "disciplinaCodigo": "12490-P",
+        "disciplinaNome": "Estudos de Bancos de Dados 2 - Prática",
+        "turmaCodigo": "0102",
+        "anoCalendario": 2026,
+        "semestreCalendario": 2,
+        "situacao": "matriculado"
+      }
+    ]
+  },
+  {
+    "RA": "2236",
+    "nome": "Giovana Costa Melo",
+    "curso": "Engenharia de Software",
+    "periodo": 4,
+    "matriculas": [
+      {
+        "disciplinaCodigo": "12490-P",
+        "disciplinaNome": "Estudos de Bancos de Dados 2 - Prática",
+        "turmaCodigo": "0102",
+        "anoCalendario": 2026,
+        "semestreCalendario": 2,
+        "situacao": "matriculado"
+      }
+    ]
+  },
+  {
+    "RA": "2237",
+    "nome": "Henrique Batista Gomes",
+    "curso": "Engenharia de Software",
+    "periodo": 4,
+    "matriculas": [
+      {
+        "disciplinaCodigo": "12490-P",
+        "disciplinaNome": "Estudos de Bancos de Dados 2 - Prática",
+        "turmaCodigo": "0102",
+        "anoCalendario": 2026,
+        "semestreCalendario": 2,
+        "situacao": "matriculado"
+      }
+    ]
+  },
+  {
+    "RA": "2238",
+    "nome": "Isabela Moura Cardoso",
+    "curso": "Engenharia de Software",
+    "periodo": 4,
+    "matriculas": [
+      {
+        "disciplinaCodigo": "12490-P",
+        "disciplinaNome": "Estudos de Bancos de Dados 2 - Prática",
+        "turmaCodigo": "0102",
+        "anoCalendario": 2026,
+        "semestreCalendario": 2,
+        "situacao": "matriculado"
+      }
+    ]
+  },
+  {
+    "RA": "1239",
+    "nome": "Luke Skywalker",
+    "curso": "Engenharia de Software",
+    "periodo": 4,
+    "matriculas": [
+      {
+        "disciplinaCodigo": "12490-P",
+        "disciplinaNome": "Estudos de Bancos de Dados 2 - Prática",
+        "turmaCodigo": "0101",
+        "anoCalendario": 2026,
+        "semestreCalendario": 2,
+        "situacao": "matriculado"
+      }
+    ]
+  },
+  {
+    "RA": "1240",
+    "nome": "Harry Potter",
+    "curso": "Engenharia de Software",
+    "periodo": 4,
+    "matriculas": [
+      {
+        "disciplinaCodigo": "12490-P",
+        "disciplinaNome": "Estudos de Bancos de Dados 2 - Prática",
+        "turmaCodigo": "0101",
+        "anoCalendario": 2026,
+        "semestreCalendario": 2,
+        "situacao": "matriculado"
+      }
+    ]
+  },
+  {
+    "RA": "1241",
+    "nome": "Peter Parker",
+    "curso": "Engenharia de Software",
+    "periodo": 4,
+    "matriculas": [
+      {
+        "disciplinaCodigo": "12490-P",
+        "disciplinaNome": "Estudos de Bancos de Dados 2 - Prática",
+        "turmaCodigo": "0101",
+        "anoCalendario": 2026,
+        "semestreCalendario": 2,
+        "situacao": "matriculado"
+      }
+    ]
+  },
+  {
+    "RA": "1242",
+    "nome": "Diana Prince",
+    "curso": "Engenharia de Software",
+    "periodo": 4,
+    "matriculas": [
+      {
+        "disciplinaCodigo": "12490-P",
+        "disciplinaNome": "Estudos de Bancos de Dados 2 - Prática",
+        "turmaCodigo": "0101",
+        "anoCalendario": 2026,
+        "semestreCalendario": 2,
+        "situacao": "matriculado"
+      }
+    ]
+  },
+  {
+    "RA": "1243",
+    "nome": "Clark Kent",
+    "curso": "Engenharia de Software",
+    "periodo": 4,
+    "matriculas": [
+      {
+        "disciplinaCodigo": "12490-P",
+        "disciplinaNome": "Estudos de Bancos de Dados 2 - Prática",
+        "turmaCodigo": "0101",
+        "anoCalendario": 2026,
+        "semestreCalendario": 2,
+        "situacao": "matriculado"
+      }
+    ]
+  },
+  {
+    "RA": "1244",
+    "nome": "Michael Corleone",
+    "curso": "Engenharia de Software",
+    "periodo": 4,
+    "matriculas": [
+      {
+        "disciplinaCodigo": "12490-P",
+        "disciplinaNome": "Estudos de Bancos de Dados 2 - Prática",
+        "turmaCodigo": "0101",
+        "anoCalendario": 2026,
+        "semestreCalendario": 2,
+        "situacao": "matriculado"
+      }
+    ]
+  },
+  {
+    "RA": "1245",
+    "nome": "Andy Dufresne",
+    "curso": "Engenharia de Software",
+    "periodo": 4,
+    "matriculas": [
+      {
+        "disciplinaCodigo": "12490-P",
+        "disciplinaNome": "Estudos de Bancos de Dados 2 - Prática",
+        "turmaCodigo": "0101",
+        "anoCalendario": 2026,
+        "semestreCalendario": 2,
+        "situacao": "matriculado"
+      }
+    ]
+  },
+  {
+    "RA": "1246",
+    "nome": "Jack Dawson",
+    "curso": "Engenharia de Software",
+    "periodo": 4,
+    "matriculas": [
+      {
+        "disciplinaCodigo": "12490-P",
+        "disciplinaNome": "Estudos de Bancos de Dados 2 - Prática",
+        "turmaCodigo": "0101",
+        "anoCalendario": 2026,
+        "semestreCalendario": 2,
+        "situacao": "matriculado"
+      }
+    ]
+  },
+  {
+    "RA": "1247",
+    "nome": "Rose DeWitt Bukater",
+    "curso": "Engenharia de Software",
+    "periodo": 4,
+    "matriculas": [
+      {
+        "disciplinaCodigo": "12490-P",
+        "disciplinaNome": "Estudos de Bancos de Dados 2 - Prática",
+        "turmaCodigo": "0101",
+        "anoCalendario": 2026,
+        "semestreCalendario": 2,
+        "situacao": "matriculado"
+      }
+    ]
+  },
+  {
+    "RA": "2239",
+    "nome": "Dominic Toretto",
+    "curso": "Engenharia de Software",
+    "periodo": 4,
+    "matriculas": [
+      {
+        "disciplinaCodigo": "12490-P",
+        "disciplinaNome": "Estudos de Bancos de Dados 2 - Prática",
+        "turmaCodigo": "0102",
+        "anoCalendario": 2026,
+        "semestreCalendario": 2,
+        "situacao": "matriculado"
+      }
+    ]
+  },
+  {
+    "RA": "2240",
+    "nome": "Ferris Bueller",
+    "curso": "Engenharia de Software",
+    "periodo": 4,
+    "matriculas": [
+      {
+        "disciplinaCodigo": "12490-P",
+        "disciplinaNome": "Estudos de Bancos de Dados 2 - Prática",
+        "turmaCodigo": "0102",
+        "anoCalendario": 2026,
+        "semestreCalendario": 2,
+        "situacao": "matriculado"
+      }
+    ]
+  },
+  {
+    "RA": "2241",
+    "nome": "Elle Woods",
+    "curso": "Engenharia de Software",
+    "periodo": 4,
+    "matriculas": [
+      {
+        "disciplinaCodigo": "12490-P",
+        "disciplinaNome": "Estudos de Bancos de Dados 2 - Prática",
+        "turmaCodigo": "0102",
+        "anoCalendario": 2026,
+        "semestreCalendario": 2,
+        "situacao": "matriculado"
+      }
+    ]
+  },
+  {
+    "RA": "2242",
+    "nome": "Jules Winnfield",
+    "curso": "Engenharia de Software",
+    "periodo": 4,
+    "matriculas": [
+      {
+        "disciplinaCodigo": "12490-P",
+        "disciplinaNome": "Estudos de Bancos de Dados 2 - Prática",
+        "turmaCodigo": "0102",
+        "anoCalendario": 2026,
+        "semestreCalendario": 2,
+        "situacao": "matriculado"
+      }
+    ]
+  },
+  {
+    "RA": "2243",
+    "nome": "Vincent Vega",
+    "curso": "Engenharia de Software",
+    "periodo": 4,
+    "matriculas": [
+      {
+        "disciplinaCodigo": "12490-P",
+        "disciplinaNome": "Estudos de Bancos de Dados 2 - Prática",
+        "turmaCodigo": "0102",
+        "anoCalendario": 2026,
+        "semestreCalendario": 2,
+        "situacao": "matriculado"
+      }
+    ]
+  },
+  {
+    "RA": "2244",
+    "nome": "Tony Montana",
+    "curso": "Engenharia de Software",
+    "periodo": 4,
+    "matriculas": [
+      {
+        "disciplinaCodigo": "12490-P",
+        "disciplinaNome": "Estudos de Bancos de Dados 2 - Prática",
+        "turmaCodigo": "0102",
+        "anoCalendario": 2026,
+        "semestreCalendario": 2,
+        "situacao": "matriculado"
+      }
+    ]
+  },
+  {
+    "RA": "2245",
+    "nome": "Nemo",
+    "curso": "Engenharia de Software",
+    "periodo": 4,
+    "matriculas": [
+      {
+        "disciplinaCodigo": "12490-P",
+        "disciplinaNome": "Estudos de Bancos de Dados 2 - Prática",
+        "turmaCodigo": "0102",
+        "anoCalendario": 2026,
+        "semestreCalendario": 2,
+        "situacao": "matriculado"
+      }
+    ]
+  },
+  {
+    "RA": "2246",
+    "nome": "Mulan",
+    "curso": "Engenharia de Software",
+    "periodo": 4,
+    "matriculas": [
+      {
+        "disciplinaCodigo": "12490-P",
+        "disciplinaNome": "Estudos de Bancos de Dados 2 - Prática",
+        "turmaCodigo": "0102",
+        "anoCalendario": 2026,
+        "semestreCalendario": 2,
+        "situacao": "matriculado"
+      }
+    ]
+  },
+  {
+    "RA": "2247",
+    "nome": "Simba",
+    "curso": "Engenharia de Software",
+    "periodo": 4,
+    "matriculas": [
+      {
+        "disciplinaCodigo": "12490-P",
+        "disciplinaNome": "Estudos de Bancos de Dados 2 - Prática",
+        "turmaCodigo": "0102",
+        "anoCalendario": 2026,
+        "semestreCalendario": 2,
+        "situacao": "matriculado"
+      }
+    ]
+  },
+  {
+    "RA": "2248",
+    "nome": "Shrek",
+    "curso": "Engenharia de Software",
+    "periodo": 4,
+    "matriculas": [
+      {
+        "disciplinaCodigo": "12490-P",
+        "disciplinaNome": "Estudos de Bancos de Dados 2 - Prática",
+        "turmaCodigo": "0102",
+        "anoCalendario": 2026,
+        "semestreCalendario": 2,
+        "situacao": "matriculado"
+      }
+    ]
+  }
+]
